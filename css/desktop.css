@@ -1,0 +1,281 @@
+header {
+  width: 100%;
+  height: 120vh;
+  background-image: url(../images/Backgraound-1-min.png);
+  background-size: 100% 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: sans;
+}
+
+header div.header {
+  width: 100%;
+  height: 10vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+header div.header div.container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header div.header div.container div.right {
+  width: 70%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header div.header div.container div.right div.hamber {
+  width: 10%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header div.header div.container div.right div.hamber img.hambergur {
+  width: 70%;
+}
+
+header div.header div.container div.right div.desktop-nav {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header div.header div.container div.right div.desktop-nav a {
+  text-decoration: none;
+  margin-right: 1.5em;
+  padding: 0.5em 1em;
+  color: #00e682;
+  font-size: 14px;
+}
+
+header div.header div.container div.left {
+  width: 30%;
+  height: 100%;
+}
+
+header div.header div.container div.left img {
+  width: 60%;
+  height: 90%;
+}
+
+header div.nav {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header div.nav div.nav-a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 7em;
+}
+
+header div.nav div.nav-a a {
+  text-decoration: none;
+  color: black;
+  padding: 1em 0;
+  position: relative;
+}
+
+header section.main {
+  width: 100%;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header section.main div.right {
+  width: 50%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header section.main div.right div.req-right {
+  width: 50%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 2em;
+}
+
+header section.main div.right div.req-right div.req-remake {
+  width: 70%;
+  height: 73%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 5px solid #00e682;
+  -webkit-box-shadow: 2px 2px 5px 4px black;
+          box-shadow: 2px 2px 5px 4px black;
+}
+
+header section.main div.right div.req-right div.req-remake img {
+  width: 60%;
+}
+
+header section.main div.right div.req-left {
+  width: 50%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header section.main div.right div.req-left div.req-design {
+  width: 70%;
+  height: 32%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 5px solid #00e682;
+  -webkit-box-shadow: 2px 2px 5px 4px black;
+          box-shadow: 2px 2px 5px 4px black;
+  margin-bottom: 2em;
+}
+
+header section.main div.right div.req-left div.req-design img {
+  width: 40%;
+}
+
+header section.main div.right div.req-left div.req-landscape {
+  width: 70%;
+  height: 32%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 5px solid #00e682;
+  -webkit-box-shadow: 2px 2px 5px 4px black;
+          box-shadow: 2px 2px 5px 4px black;
+}
+
+header section.main div.right div.req-left div.req-landscape img {
+  width: 40%;
+}
+
+header section.main div.left {
+  width: 50%;
+  height: 90%;
+}
+
+.scaled {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  -webkit-transition: 2000ms;
+  transition: 2000ms;
+}
+/*# sourceMappingURL=desktop.css.map */

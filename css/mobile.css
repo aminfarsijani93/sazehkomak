@@ -1,0 +1,140 @@
+header {
+  width: 100%;
+  height: 55%;
+  background-image: url(../images/Backgraound-1-min.png);
+  background-size: 100% 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: sans;
+  overflow: hidden;
+}
+
+header div.header {
+  width: 100%;
+  height: 15%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+header div.header div.container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header div.header div.container div.right {
+  width: 70%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header div.header div.container div.right div.hamber {
+  width: 30%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header div.header div.container div.right div.hamber img.hambergur {
+  width: 100%;
+}
+
+header div.header div.container div.right div.desktop-nav {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+header div.header div.container div.right div.desktop-nav a {
+  text-decoration: none;
+  margin-right: 1.5em;
+  padding: .5em 1em;
+  color: #00e682;
+  font-size: 14px;
+}
+
+header div.header div.container div.left {
+  width: 30%;
+  height: 100%;
+}
+
+header div.header div.container div.left img {
+  width: 60%;
+  height: 90%;
+}
+
+header div.nav {
+  width: 100%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header div.nav div.nav-a {
+  width: 95%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 7em;
+}
+
+header div.nav div.nav-a a {
+  text-decoration: none;
+  color: black;
+  padding: 1em 0;
+}
+
+.scaled {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  -webkit-transition: 2000ms;
+  transition: 2000ms;
+}
+/*# sourceMappingURL=mobile.css.map */
