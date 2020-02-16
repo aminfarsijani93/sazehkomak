@@ -302,8 +302,8 @@ header section.main div.right div.req-left div.req-design {
       -ms-flex-direction: column;
           flex-direction: column;
   border: 5px solid #00e682;
-  -webkit-box-shadow: .5px .5px .5px .5px black;
-          box-shadow: .5px .5px .5px .5px black;
+  -webkit-box-shadow: 0.5px 0.5px 0.5px 0.5px black;
+          box-shadow: 0.5px 0.5px 0.5px 0.5px black;
   cursor: pointer;
   margin-bottom: 2em;
 }
@@ -397,8 +397,8 @@ header section.main div.right div.req-left div.req-landscape {
       -ms-flex-direction: column;
           flex-direction: column;
   border: 5px solid #00e682;
-  -webkit-box-shadow: .5px .5px .5px .5px black;
-          box-shadow: .5px .5px .5px .5px black;
+  -webkit-box-shadow: 0.5px 0.5px 0.5px 0.5px black;
+          box-shadow: 0.5px 0.5px 0.5px 0.5px black;
   cursor: pointer;
 }
 
@@ -477,6 +477,47 @@ header section.main div.right div.req-left div.req-landscape a {
 header section.main div.left {
   width: 50%;
   height: 90%;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header section.main div.left div.square-out {
+  width: 50%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1em solid #00e682;
+  position: absolute;
+  left: -1em;
+  top: 1.2em;
+}
+
+header section.main div.left h1 {
+  font-size: 3.5em;
+  font-weight: 900;
+  color: white;
+  font-family: sans-serif;
+  text-shadow: 6px 5px 6px black;
 }
 
 section.middle {
@@ -495,11 +536,15 @@ section.middle {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-family: sans;
+  background-color: #e6fff4;
 }
 
 section.middle h1 {
   text-align: center;
   margin-top: 2em;
+  font-weight: 900;
+  margin-bottom: 0.5em;
 }
 
 section.middle h3 {
@@ -522,7 +567,7 @@ section.middle div.nav-middle {
 }
 
 section.middle div.nav-middle a {
-  width: 18%;
+  width: 15%;
   height: 100%;
   border: 2px solid black;
   text-decoration: none;
@@ -536,6 +581,170 @@ section.middle div.nav-middle a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: 800;
+}
+
+section.slider-hand {
+  width: 100%;
+  height: 90vh;
+}
+
+section.slider-hand div.slider-before {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/C_1-1.jpg);
+  position: relative;
+}
+
+section.slider-hand div.slider-before div.slider-after {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-image: url(../images/C_2-1.jpg);
+  overflow: hidden;
+  border-left: 0.5em solid #00e682;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+section.slider-hand div.slider-before div.slider-after:hover {
+  width: 100%;
+}
+
+section.remake {
+  width: 100%;
+  height: 160vh;
+  background-color: #e6fff4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: sans;
+}
+
+section.remake .sec-rem-up {
+  width: 90%;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3em;
+}
+
+section.remake .sec-rem-up .sec-rem-up-right {
+  width: 35%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.remake .sec-rem-up .sec-rem-up-right p {
+  width: 80%;
+  margin-top: 0.75em;
+  text-align: justify;
+}
+
+section.remake .sec-rem-up .sec-rem-up-left {
+  width: 65%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+section.remake .sec-rem-up .sec-rem-up-left div.slide-right {
+  width: 47%;
+  height: 90%;
+  background-color: white;
+  border-radius: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.remake .sec-rem-up .sec-rem-up-left div.slide-right ul {
+  margin: 0;
+}
+
+section.remake .sec-rem-up .sec-rem-up-left div.slide-right ul li {
+  text-align: right;
+}
+
+section.remake .sec-rem-up .sec-rem-up-left div.slide-left {
+  width: 47%;
+  height: 90%;
+  background-color: white;
+  border-radius: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.remake .sec-rem-up .sec-rem-up-left div.slide-left ul {
+  margin: 0;
+}
+
+section.remake .sec-rem-up .sec-rem-up-left div.slide-left ul li {
+  text-align: right;
+}
+
+section.remake div.sec-rem-down {
+  width: 90%;
+  height: 100vh;
 }
 
 .scaled {

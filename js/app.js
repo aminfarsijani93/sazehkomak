@@ -28,6 +28,7 @@
             this.dom.divReqDesign.addEventListener("mouseout" ,this.undochangebackReqDesign);
             this.dom.divReqLandscape.addEventListener("mouseover" ,this.changeBackReqLand);
             this.dom.divReqLandscape.addEventListener("mouseout" ,this.undoChangeBackReqLand);
+            this.dom.square.addEventListener("load",this.animatedSquare);
 
 
 
@@ -112,9 +113,18 @@
             App.dom.divTehReqLandscape.style.display = "none";
             App.dom.divOthersReqLandscape.style.display = "none";
         },
+        animatedSquare: function() {
+            console.log("hi");
+            
+            setInterval(()=>{
+                App.dom.square.style.left = "-100%";
+                App.dom.square.style.transition = "2000ms"
+            } ,3000)
+        }
+        
     };
 
-
+   
 
     // Doms--------------------------------------------------------------
     App.init({
@@ -139,6 +149,8 @@
         divOthersReqLandscape: document.querySelector("div.city-others-landscape"),
         imgReqLandscape : document.querySelector("div.req-landscape img"),
         h5ReqLandscape : document.querySelector("div.req-landscape h5"),
+        //square animated ----------------------------------------
+        square: document.querySelector("div.square-out"),
 
 
 

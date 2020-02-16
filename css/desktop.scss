@@ -168,7 +168,7 @@ header {
           justify-content: center;
           flex-direction: column;
           border: 5px solid #00e682;
-          box-shadow: .5px .5px .5px .5px black;
+          box-shadow: 0.5px 0.5px 0.5px 0.5px black;
           cursor: pointer;
           margin-bottom: 2em;
           img {
@@ -226,7 +226,7 @@ header {
           justify-content: center;
           flex-direction: column;
           border: 5px solid #00e682;
-          box-shadow: .5px .5px .5px .5px black;
+          box-shadow: 0.5px 0.5px 0.5px 0.5px black;
           cursor: pointer;
           div.city-teh-landscape {
             width: 65%;
@@ -280,24 +280,52 @@ header {
     div.left {
       width: 50%;
       height: 90%;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      div.square-out {
+        width: 50%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1em solid #00e682;
+        position: absolute;
+        left: -1em;
+        top: 1.2em;
+      }
+      h1 {
+        font-size: 3.5em;
+        font-weight: 900;
+        color: white;
+        font-family: sans-serif;
+        text-shadow: 6px 5px 6px black;
+      }
     }
   }
 }
-section.middle{
+section.middle {
   width: 100%;
   height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  h1{
+  font-family: sans;
+  background-color: rgb(230, 255, 244);
+  h1 {
     text-align: center;
     margin-top: 2em;
+    font-weight: 900;
+    margin-bottom: 0.5em;
   }
-  h3{
+  h3 {
     text-align: center;
   }
-  div.nav-middle{
+  div.nav-middle {
     width: 60%;
     height: 15%;
     display: flex;
@@ -305,8 +333,8 @@ section.middle{
     align-items: center;
     margin-top: 1em;
     margin-bottom: 2em;
-    a{
-      width: 18%;
+    a {
+      width: 15%;
       height: 100%;
       border: 2px solid black;
       text-decoration: none;
@@ -314,7 +342,107 @@ section.middle{
       display: flex;
       justify-content: center;
       align-items: center;
+      font-weight: 800;
     }
+  }
+}
+section.slider-hand {
+  width: 100%;
+  height: 90vh;
+  div.slider-before {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/C_1-1.jpg);
+    position: relative;
+    div.slider-after {
+      width: 20%;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-image: url(../images/C_2-1.jpg);
+      overflow: hidden;
+      border-left: 0.5em solid #00e682;
+      transition: 1s ease;
+      &:hover {
+        width: 100%;
+      }
+    }
+  }
+}
+section.remake {
+  width: 100%;
+  height: 160vh;
+  background-color: rgb(230, 255, 244);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans;
+  .sec-rem-up {
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3em;
+    .sec-rem-up-right {
+      width: 35%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      p {
+        width: 80%;
+        margin-top: 0.75em;
+        text-align: justify;
+      }
+    }
+    .sec-rem-up-left {
+      width: 65%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      position: relative;
+      div.slide-right {
+        width: 47%;
+        height: 90%;
+        background-color: white;
+        border-radius: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        ul {
+          margin: 0;
+          li {
+            text-align: right;
+          }
+        }
+      }
+      div.slide-left {
+        width: 47%;
+        height: 90%;
+        background-color: white;
+        border-radius: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        ul {
+          margin: 0;
+          li {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+  div.sec-rem-down {
+    width: 90%;
+    height: 100vh;
   }
 }
 
