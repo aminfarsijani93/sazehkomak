@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>سازه کمک (بازسازی) </title>
     <script src="./js/app.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 500px)">
     <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width: 500px)">
@@ -93,7 +95,7 @@
             </div>
             <div class="left col-12 col-lg-6">
                 <div class="square-out"></div>
-                <h1>WE</h1>
+                <h1 class="we">WE</h1>
                 <h1>ARCHITECT</h1>
 
             </div>
@@ -111,6 +113,8 @@
         </div>
     </section>
     <section class="slider-hand">
+        <img class="next" src="./images/next.png" alt="next">
+        <img class="back" src="./images/back.png" alt="back">
         <div class="slider-before">
             <div class="slider-after">
 
@@ -121,35 +125,261 @@
         <div class="sec-rem-up">
             <div class="sec-rem-up-right">
                 <h1>بازسازی چیست؟</h1>
-                <p>بازسازی به معنای به کارگیری نیروهای مجرب و متخصص به منظور تغییر/رفع فرسودگی /بهینه سازی و...در بخشهای مختلف ساختمان با کاربری های مختلف می باشد که به بهبود عملکرد آن کمک شایانی می کند.</p>
+                <p>بازسازی به معنای به کارگیری نیروهای مجرب و متخصص به منظور تغییر/رفع فرسودگی /بهینه سازی و...در بخشهای
+                    مختلف ساختمان با کاربری های مختلف می باشد که به بهبود عملکرد آن کمک شایانی می کند.</p>
 
             </div>
-            <div class="sec-rem-up-left">            
-                <div class="slide-right">
-                    <h5>عوامل موثر در مدت زمان اجرای بازسازی</h5>
-                    <ul>
-                        <li>نوع مجری و هماهنگی بین تیم ها</li>
-                        <li>نوع مصالح مصرفی و در دسترس بودن آنها</li>
-                        <li>موقعیت مکانی ساختمان</li>
-                        <li>متراژ ساختمان(به کارگیری چندگروه)</li>
-                        <li>فصل شروع بازسازی</li>
-                    </ul>
+            <div class="sec-rem-up-left">
+                <div class="slider-main1 fade">
+                    <div class="slide-right">
+                        <h5>عوامل موثر در مدت زمان اجرای بازسازی</h5>
+                        <ul>
+                            <li>نوع مجری و هماهنگی بین تیم ها</li>
+                            <li>نوع مصالح مصرفی و در دسترس بودن آنها</li>
+                            <li>موقعیت مکانی ساختمان</li>
+                            <li>متراژ ساختمان(به کارگیری چندگروه)</li>
+                            <li>فصل شروع بازسازی</li>
+                        </ul>
+                    </div>
+                    <div class="slide-left">
+                        <h5>عوامل موثربر هزینه بازسازی</h5>
+                        <ul>
+                            <li>تجربه و عملکرد مجری</li>
+                            <li>نوع مصالح مصرفی</li>
+                            <li>متراژ و نوع کاربری</li>
+                            <li>موقعیت مکانی /زمانی/مدت زمان اجرا</li>
+                            <li>نوع طراحی و سختی کار</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="slide-left">
-                    <h5>عوامل موثربر هزینه بازسازی</h5>
-                    <ul>
-                        <li>تجربه و عملکرد مجری</li>
-                        <li>نوع مصالح مصرفی</li>
-                        <li>متراژ و نوع کاربری</li>
-                        <li>موقعیت مکانی /زمانی/مدت زمان اجرا</li>
-                        <li>نوع طراحی و سختی کار</li>
-                    </ul>
+                <div class="slider-main1 fade">
+                    <div class="slide-right">
+                        <h5>نکات مهم در بازسازی</h5>
+                        <ul>
+                            <li>همیشه از کادر با تجربه استفاده کنید.</li>
+                            <li>هزینه و مدت زمان اجرا را قبل از شروع براورد نمایید.</li>
+                            <li>همیشه قرارداد را بصورت کتبی امضاء کنید.</li>
+                            <li>در صورت نیاز حتما مجوزات لازم برای بازسازی را دریافت نمایید. </li>
+                            <li>نکات ایمنی را حتما جدی بگیرید.</li>
+                        </ul>
+                    </div>
+                    <div class="slide-left">
+                        <h5>عوامل موثر در مدت زمان اجرای بازسازی</h5>
+                        <ul>
+                            <li>نوع مجری و هماهنگی بین تیم ها.</li>
+                            <li>نوع مصالح مصرفی و در دسترس بودن آنها.</li>
+                            <li>موقعیت مکانی ساختمان.</li>
+                            <li>متراژ ساختمان ( بکارگیری چند گروه).</li>
+                            <li>فصل شروع بازسازی.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slider-main1 fade">
+                    <div class="slide-right">
+                        <h5>عوامل موثربر هزینه بازسازی</h5>
+                        <ul>
+                            <li>تجربه و عملکرد مجری.</li>
+                            <li>نوع مصالح مصرفی.</li>
+                            <li>متراژ ونوع کاربری</li>
+                            <li>موقعیت مکانی / زمانی و مدت زمان اجرا</li>
+                            <li>نوع طراحی وسختی کار </li>
+                        </ul>
+                    </div>
+                    <div class="slide-left">
+                        <h5>نکات مهم در بازسازی</h5>
+                        <ul>
+                            <li>همیشه از کادر با تجربه استفاده کنید.</li>
+                            <li>هزینه و مدت زمان اجرا را قبل از شروع بررسی نمایید.</li>
+                            <li>همیشه قرارداد را به صورت کتبی امضاء نمایید.</li>
+                            <li>موقعیت مکانی /زمانی/مدت زمان اجرا</li>
+                            <li>نکات ایمنی را حتما جدی بگیرید.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="circle">
+                    <div class="circle-state"></div>
+                    <div class="circle-state"></div>
+                    <div class="circle-state"></div>
                 </div>
             </div>
         </div>
         <div class="sec-rem-down">
+            <div class="sec-rem-down-right">
+                <h2>اهداف بازسازی</h2>
+                <div class="explain">
+                    <div class="circle-number">1</div>
+                    <h5>ایجاد فضایی دلنشین و آرامش بخش</h5>
+                </div>
+                <div class="explain">
+                    <div class="circle-number">2</div>
+                    <h5>ایجاد تنوع در زندگی</h5>
+                </div>
+                <div class="explain">
+                    <div class="circle-number">3</div>
+                    <h5>بهسازی واستفاده بهینه تر از فضا</h5>
+                </div>
+                <div class="explain">
+                    <div class="circle-number">4</div>
+                    <h5>ایجادفضاهای مورد نیاز</h5>
+                </div>
+                <div class="explain">
+                    <div class="circle-number">5</div>
+                    <h5>افزایش عمر ساختمان</h5>
+                </div>
+                <div class="explain">
+                    <div class="circle-number">6</div>
+                    <h5>کاهش هزینه های ناشی از فرسودگی</h5>
+                </div>
+                <div class="explain">
+                    <div class="circle-number">7</div>
+                    <h5>استفاده از تجهیزات و المان های بیشتر</h5>
+                </div>
+                <div class="explain">
+                    <div class="circle-number">8</div>
+                    <h5>بروز شدن طراحی و تجهیزات ساختمان</h5>
+                </div>
+
+            </div>
+            <div class="sec-rem-down-left">
+                <div class="big-circle">
+                    <div class="text1-center">مراحل بازسازی</div>
+                    <div class="text2-center"></div>
+                    <div class="small-circle1">1</div>
+                    <div class="small-circle2">2</div>
+                    <div class="small-circle3">3</div>
+                    <div class="small-circle4">4</div>
+                    <div class="small-circle5">5</div>
+                    <div class="small-circle6">6</div>
+                    <div class="small-circle7">7</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footer-up">
 
         </div>
+        <div class="footer-down">
+            <div class="right">
+                <div class="up-right">
+                    <div class="symbol-slider">
+                        <div class="mySlides-symbol fade">
+                            <img src="./images/1.png" style="width:100%">
+                          </div>
+                          <div class="mySlides-symbol fade">
+                            <img src="./images/2-1.png" style="width:100%">
+                          </div>
+                          <div class="mySlides-symbol fade">
+                            <img src="./images/3.png" style="width:100%">
+                          </div>
+                          <div class="mySlides-symbol fade">
+                            <img src="./images/4.png" style="width:100%">
+                          </div>
+                          <div class="mySlides-symbol fade">
+                            <img src="./images/5.png" style="width:100%">
+                          </div>
+                          <div class="mySlides-symbol fade">
+                            <img src="./images/6.png" style="width:100%">
+                          </div>
+                    </div>
+                </div>
+                <div class="down-right">
+
+                </div>
+            </div>
+            <div class="middle">
+                <div class="up">
+                    <div class="circle-nav-footer">
+                        <a href="#">
+                            <div class="circle">
+                                <img src="./images/194489-200-1.png" alt="law">
+                            </div>
+                            <h6>قوانین و مقررات</h6>
+                        </a>
+                    </div>
+                    <div class="circle-nav-footer">
+                        <a href="#">
+                            <div class="circle">
+                                <img src="./images/Untitled-1-5.png" alt="question">
+                            </div>
+                            <h6>سوالات متداول</h6>
+                        </a>
+                    </div>
+                    <div class="circle-nav-footer">
+                        <a href="#">
+                            <div class="circle">
+                                <img src="./images/Untitled-1-3.png" alt="look">
+                            </div>
+                            <h6>ویژه دیده شوید</h6>
+                        </a>
+                    </div>
+                    <div class="circle-nav-footer">
+                        <a href="#">
+                            <div class="circle">
+                                <img src="./images/Untitled-1-6.png" alt="coworker">
+                            </div>
+                            <h6>همکاری با ما</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="down">
+                    <div class="circle-nav-footer">
+                        <a href="#">
+                            <div class="circle">
+                                <img src="./images/Untitled-1-8.png" alt="law">
+                            </div>
+                            <h6>انتقادات و پیشنهادات</h6>
+                        </a>
+                    </div>
+                    <div class="circle-nav-footer">
+                        <a href="#">
+                            <div class="circle">
+                                <img src="./images/Untitled-1-1.png" alt="catalog">
+                            </div>
+                            <h6>دانلود کاتالوگ</h6>
+                            <h6>بخش بازسازی</h6>
+
+                        </a>
+                    </div>
+                    <div class="circle-nav-footer">
+                        <a href="#">
+                            <div class="circle">
+                                <img src="./images/Untitled-1-4.png" alt="about-us">
+                            </div>
+                            <h6>درباره ما</h6>
+                        </a>
+                    </div>
+                    <div class="circle-nav-footer">
+                        <a href="#">
+                            <div class="circle">
+                                <img src="./images/Untitled-1-2.png" alt="ارتباط با ما">
+                            </div>
+                            <h6>ارتباط ما ما</h6>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="left">
+                <div class="req-app">
+                    <img src="./images/Untitled-1-11-1.png" alt="app-store">
+                </div>
+                <div class="req-app">
+                    <img src="./images/Untitled-1-12-1.png" alt="sib-app">
+                </div>
+                <div class="req-app">
+                    <img src="./images/Untitled-1-13-1.png" alt="bazar-app">
+                </div>
+                <div class="req-app">
+                    <img src="./images/Untitled-1-14-1.png" alt="robat">
+                </div>
+                <div class="req-app">
+                    <img src="./images/Untitled-1-10.png" alt="google-play">
+                </div>
+                <div class="req-app"></div>
+            </div>
+        </div>
+
     </section>
 
 
